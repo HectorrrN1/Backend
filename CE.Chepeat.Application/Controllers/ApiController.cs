@@ -1,6 +1,7 @@
 ﻿
 using CE.Chepeat.Application.Presenters;
 using CE.Chepeat.Application.Services;
+using CE.Chepeat.Domain.Interfaces.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,5 +28,8 @@ namespace CE.Chepeat.Application.Controllers
 
         public IUserPresenter UserPresenter => new UserPresenter(_unitRepository, _mapper);    //
         public IAuthPresenter AuthPresenter => new AuthPresenter(_unitRepository, _mapper, _jwtService);
+
+        public IProductPresenter ProductPresenter => new ProductPresenter(_unitRepository, _mapper);
+
     }
 }

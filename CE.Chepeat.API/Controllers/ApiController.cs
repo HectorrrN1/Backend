@@ -1,4 +1,6 @@
-﻿namespace CE.Chepeat.API.Controllers;
+﻿using CE.Chepeat.Domain.Interfaces.Services;
+
+namespace CE.Chepeat.API.Controllers;
 
 public class ApiController : ControllerBase
 {
@@ -15,5 +17,7 @@ public class ApiController : ControllerBase
     {
         _appController = appController;
     }
+
+   
 }
 

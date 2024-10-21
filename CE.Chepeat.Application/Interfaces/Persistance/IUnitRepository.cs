@@ -14,5 +14,6 @@ namespace CE.Chepeat.Application.Interfaces.Persistance
 
         IUserInfraestructure userInfraestructure {  get; }
         IAuthInfraestructure authInfraestructure { get; }
+        IProductInfraestructure productInfraestructure { get; }
     }
 }

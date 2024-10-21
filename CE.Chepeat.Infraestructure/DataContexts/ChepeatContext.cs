@@ -1,5 +1,6 @@
 ﻿using CE.Chepeat.Domain.DTOs.Session;
 using CE.Chepeat.Domain.DTOs;
+using CE.Chepeat.Domain.DTOs.Product;
 
 namespace CE.Chepeat.Infraestructure.DataContexts;
 public class ChepeatContext : DbContext
@@ -14,6 +15,9 @@ public class ChepeatContext : DbContext
     public DbSet<User> Users { get; set; }
     public DbSet<Session> Sessions { get; set; }
     public DbSet<RefreshToken> RefreshTokens { get; set; }
+
+    public DbSet<ProductDto> productDto { get; set; }
+
     #endregion
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
